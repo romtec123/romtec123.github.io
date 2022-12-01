@@ -49,43 +49,37 @@
     </style>
 
     <head>
-        <title>2B2BOT - Commands</title>
-	<meta content="2B2BOT - Commands" property="og:title" />
+        <title>2B2BOT - Setup</title>
+	    <meta content="2B2BOT - Setup" property="og:title" />
     	<meta content="2B2T Minecraft & Discord Bot" property="og:description" />
-    	<meta content="https://2b2t.bot/commands" property="og:url" />
+    	<meta content="https://2b2t.bot/setup" property="og:url" />
     	<meta content="https://cdn.discordapp.com/attachments/760011982484537394/1047723460350181426/2b2bot_logo_transparent.png" property="og:image" />
     	<meta content="#FF0000" data-react-helmet="true" name="theme-color" />
-	<a href="."><header>2B2BOT</header></a>
+	    <a href="."><header>2B2BOT</header></a>
         <br>
     </head>
     <body>
         <br>
-        <h2>2B2BOT Commands</h2>
+        <h2>2B2BOT Setup</h2>
         <br>
-        <h3>/help</h3>
-        <h4>This command will send a link to this website.</h4>
+        <h3>Chatbridge, Joins and Famous Joins</h3>
+        <h4>
+            First, create a channel for the chat or joins to be printed to. Make sure the bot can send messages, embeds, create webhooks and manage messages in this channel.
+            <br>
+            Next, type /config and select the option for the type of channel you want and then select channel you just created. The channel should now begin to have messages sent to it.
+        </h4>
         <br>
-        <h3>/info</h3>
-        <h4>This command gives some info about the bot and our privacy policy.</h4>
         <br>
-        <h3>/config</h3>
-        <h4>This command allows discord admins to setup 2b2bot chat, joins and famous joins channels.</h4>
-        <br>
-        <h3>/configs</h3>
-        <h4>This command shows all of the configured channels and settings.</h4>
-        <br>
-        <h3>/lookup - /profile - /msgs - /seen - /stats - /joindate - /kills - /deaths - /lastseen - /joins - /leaves</h3>
-        <h4>This command and it's aliases show data that was collected of a player.</h4>
-        <br>
-        <h3>/queue - /prio - /tps </h3>
-        <h4>This command and it's aliases show data about 2b2t including playercount, normal and prio queue lengths and tps.</h4>
-        <br>
-        <h3>/restarts</h3>
-        <h4>This command and its sub-commands allows you to set the restart notification role, channel and create an embed to give users the role.</h4>
-        <br>
-        <h3>/stalker</h3>
-        <h4>This command allows you to add, remove and list to your stalker list. When someone joins on your list, you will be DM'ed by the bot.</h4>
-        <br>
+        <h3>Restart Notifications</h3>
+        <h4>
+            First, create a channel for the restart notifications to be sent to. Make sure the bot can send messages, mention all users, and send embeds in this channel.
+            <br>
+            Next, create a role to be given to people who want to be notified. Make sure it is below 2B2BOT's role so that 2B2BOT can give the role to users and make sure 2B2BOT has permission to give the role.
+            <br>
+            Type /restarts and select the "setchannel" option, and then specify the notification channel. Next select "setrole" to set the role to be mentioned when the server restarts.
+            <br>
+            Finally, go to the notification channel and run the "/restarts embed" command to send an embed that allows users to add or remove the notificaion role to themselves.
+        </h4>
     </body>
     <footer>
         <br>
